@@ -110,6 +110,18 @@ html, body {
 .nav-count {
   font-size: 11px; color: var(--c-muted); font-weight: 400;
 }
+.nav-start-here {
+  background: linear-gradient(90deg, #fff3e0 0%, #ffe0b2 100%);
+  border-left-color: #f57c00 !important;
+}
+.nav-start-here:hover {
+  background: linear-gradient(90deg, #ffe0b2 0%, #ffcc80 100%);
+}
+.start-here-badge {
+  display: inline-block; padding: 2px 6px; margin-left: 6px;
+  background: #f57c00; color: #fff; font-size: 9px; font-weight: 700;
+  border-radius: 3px; letter-spacing: 0.5px; vertical-align: middle;
+}
 
 /* ========== MODULE ========== */
 .module { display: none; }
@@ -144,6 +156,27 @@ html, body {
 .goal-callout { background: #e8f4f8; border-left-color: var(--c-accent); }
 .approach-callout { background: #e8f5e9; border-left-color: var(--c-success); }
 .deliverables-callout { background: #fff8e1; border-left-color: var(--c-warning); }
+.netacad-callout {
+  background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+  border-left: 5px solid #1b6d96;
+  padding: 18px 22px; border-radius: 0 8px 8px 0; margin: 16px 0 24px;
+}
+.netacad-callout strong { color: #0d47a1; font-size: 15px; }
+.netacad-link {
+  display: inline-block; margin: 10px 0 6px;
+  color: #1565c0; font-weight: 700; font-size: 16px;
+  text-decoration: none; word-break: break-all;
+  padding: 8px 14px; background: #fff; border: 1px solid #1565c0;
+  border-radius: 4px; transition: all 0.15s;
+}
+.netacad-link:hover { background: #1565c0; color: #fff; }
+.netacad-meta {
+  font-size: 12px; color: #374b54; font-weight: 600;
+  margin: 8px 0; letter-spacing: 0.3px;
+}
+.netacad-note {
+  font-size: 13px; color: #142840; line-height: 1.6; margin-top: 8px;
+}
 
 /* ========== MODULE PROGRESS ========== */
 .module-progress {
@@ -353,13 +386,14 @@ html, body {
   <nav class="sidebar">
     <div class="sidebar-title">Course Contents</div>
     <a href="#" data-target="intro" class="nav-item active"><span class="nav-num">00</span><span class="nav-label">Course Introduction</span></a>
+<a href="#" data-target="module-0" class="nav-item nav-start-here"><span class="nav-num">M0</span><span class="nav-label">Cisco Networking Basics — NetAcad Foundational Course <span class="start-here-badge">START HERE</span></span><span class="nav-count" id="nav-count-0">6 lessons</span></a>
 <a href="#" data-target="module-1" class="nav-item"><span class="nav-num">M1</span><span class="nav-label">Networking Fundamentals — The Language of IT Infrastructure</span><span class="nav-count" id="nav-count-1">7 lessons</span></a>
 <a href="#" data-target="module-2" class="nav-item"><span class="nav-num">M2</span><span class="nav-label">Servers, Storage &amp; Virtualization</span><span class="nav-count" id="nav-count-2">6 lessons</span></a>
 <a href="#" data-target="module-3" class="nav-item"><span class="nav-num">M3</span><span class="nav-label">Security &amp; Cloud</span><span class="nav-count" id="nav-count-3">7 lessons</span></a>
 <a href="#" data-target="module-4" class="nav-item"><span class="nav-num">M4</span><span class="nav-label">CCTV, AV &amp; End-User Computing</span><span class="nav-count" id="nav-count-4">6 lessons</span></a>
 <a href="#" data-target="module-5" class="nav-item"><span class="nav-num">M5</span><span class="nav-label">Solution Playbook &amp; Discovery Mastery</span><span class="nav-count" id="nav-count-5">6 lessons</span></a>
 <a href="#" data-target="module-6" class="nav-item"><span class="nav-num">M6</span><span class="nav-label">Certifications Track &amp; Pre-Sales Mastery</span><span class="nav-count" id="nav-count-6">7 lessons</span></a>
-<a href="#" data-target="appendix-a" class="nav-item"><span class="nav-num">A</span><span class="nav-label">26-Week Schedule</span></a>
+<a href="#" data-target="appendix-a" class="nav-item"><span class="nav-num">A</span><span class="nav-label">15-Week Schedule</span></a>
 <a href="#" data-target="appendix-b" class="nav-item"><span class="nav-num">B</span><span class="nav-label">Official Sources</span></a>
   </nav>
 
@@ -374,16 +408,20 @@ html, body {
 <p class="section-body">Welcome to the Apex Systems Engineer Course, a structured 6-month curriculum designed to transform you from a Systems Engineer into a confident Pre-Sales Solutions Engineer. This course is not about memorizing product models or brand names. It is about learning to think like a consultant: understanding a client's business problem first, then matching the right technologies from Apex's partner ecosystem to solve it. The roadmap you will follow mirrors the real career progression used by senior solutions architects worldwide — from learning the language of IT infrastructure, to mastering partner strengths, to designing complete solutions for hospitals, schools, warehouses, and offices.</p>
 </div>
 <div class="module-section">
+<h3 class="module-section-title">Module 0 — Your Starting Course: Cisco Networking Basics</h3>
+<p class="section-body">Before you begin Module 1, we assigned you a specific starting course: the free Cisco Networking Academy 'Networking Basics' course at netacad.com. This is a 22-hour beginner-level, self-paced, online course with 13 hands-on labs, available in 11 languages including English. It is part of Cisco's Career Path: Network Technician. The course covers network types, network media, application layer services, protocols and standards, IPv4 addressing, and wireless access. Treat Module 0 as mandatory pre-work: complete it before starting Module 1. It will give you a vendor-neutral foundation that makes every subsequent lesson in this curriculum easier to absorb, and it earns you a Cisco-issued certificate of completion you can add to your professional portfolio. The course URL is https://www.netacad.com/courses/networking-basics — enroll today and aim to complete it within the first 2-3 weeks of your study plan.</p>
+</div>
+<div class="module-section">
 <h3 class="module-section-title">The Philosophy: Problem-First, Not Product-First</h3>
 <p class="section-body">Most beginners try to memorize brands first — Cisco, Fortinet, Dell, HP — without knowing what those brands actually do. That approach is slow and fragile. Instead, this course teaches you technology categories first: what a switch is, what a firewall does, why a client might need a NAS instead of a SAN. Once you understand the categories, learning the partners becomes trivial because you can ask the right question: 'What problem does this vendor solve, and for whom?' This single shift in thinking is what separates an average engineer who quotes products from an excellent engineer who solves problems. Every lesson in this curriculum reinforces this philosophy through real client scenarios, discovery questions, and solution templates.</p>
 </div>
 <div class="module-section">
-<h3 class="module-section-title">How the 6 Modules Are Structured</h3>
-<p class="section-body">The course is organized into six monthly modules. Module 1 covers Networking Fundamentals — switches, routers, firewalls, wireless, cabling. Module 2 dives into Servers, Storage, and Virtualization with Dell ISG. Module 3 tackles Security and Cloud with Fortinet and Microsoft. Module 4 covers CCTV, AV, and End-User Computing with Dahua, Logitech, and printing partners. Module 5 shifts to Solution Design — the Solution Playbook, discovery questions, business verticals, and reusable solution templates. Module 6 closes with the Certifications Track (CCNA, Fortinet FCA, AZ-900, MS-900, ITIL 4) and Pre-Sales Mastery skills. Each module contains 5 to 8 deep-dive lessons, a client scenario, a self-assessment quiz, and citations to official sources.</p>
+<h3 class="module-section-title">How the Modules Are Structured</h3>
+<p class="section-body">The course is organized into a foundational Module 0 (Cisco Networking Basics, your boss-assigned starting course) followed by six monthly modules. Module 0 is a 22-hour self-paced Cisco NetAcad course that establishes vendor-neutral networking foundations before you touch any vendor-specific material. Module 1 then covers Networking Fundamentals with an Apex partner lens — switches, routers, firewalls, wireless, cabling. Module 2 dives into Servers, Storage, and Virtualization with Dell ISG. Module 3 tackles Security and Cloud with Fortinet and Microsoft. Module 4 covers CCTV, AV, and End-User Computing with Dahua, Logitech, and printing partners. Module 5 shifts to Solution Design — the Solution Playbook, discovery questions, business verticals, and reusable solution templates. Module 6 closes with the Certifications Track (CCNA, Fortinet FCA, AZ-900, MS-900, ITIL 4) and Pre-Sales Mastery skills. Each module contains deep-dive lessons, a client scenario, a self-assessment quiz, and citations to official sources.</p>
 </div>
 <div class="module-section">
 <h3 class="module-section-title">The Weekly Study Schedule</h3>
-<p class="section-body">Consistency beats intensity. The recommended schedule is 1 to 2 hours per day, structured by topic: Monday = Networking, Tuesday = Servers, Wednesday = Security, Thursday = Cloud, Friday = CCTV, Saturday = one partner deep dive, Sunday = review and quiz. This rotation keeps every major topic fresh in your mind and mirrors how real pre-sales work flows — clients rarely ask about only one technology at a time. The Excel progress tracker and interactive HTML version both follow this weekly rhythm, so you can mark each lesson as Not Started, In Progress, Completed, or Mastered and watch your module completion percentage climb week by week.</p>
+<p class="section-body">Consistency beats intensity. The first 2-3 weeks are dedicated to Module 0 (Cisco Networking Basics on NetAcad) — block 1-2 hours per day to work through the 22-hour NetAcad course and its 13 labs. Once Module 0 is complete, the recommended schedule for Modules 1-6 is 1 to 2 hours per day, structured by topic: Monday = Networking, Tuesday = Servers, Wednesday = Security, Thursday = Cloud, Friday = CCTV, Saturday = one partner deep dive, Sunday = review and quiz. This rotation keeps every major topic fresh in your mind and mirrors how real pre-sales work flows — clients rarely ask about only one technology at a time. The Excel progress tracker and interactive HTML version both follow this weekly rhythm, so you can mark each lesson as Not Started, In Progress, Completed, or Mastered and watch your module completion percentage climb week by week.</p>
 </div>
 <div class="module-section">
 <h3 class="module-section-title">How to Use the Three Deliverables</h3>
@@ -398,6 +436,410 @@ html, body {
 <p class="section-body">This curriculum is the foundation for a multi-year career progression. The realistic path looks like this: Systems Engineer (now) to Senior Systems Engineer (12-18 months) to Pre-Sales Solutions Engineer (2-3 years) to Solutions Architect (3-5 years) to Technical Consultant (5-7 years) to Enterprise Solutions Architect (7+ years). At the Solutions Architect level and beyond, you are no longer discussing individual routers or servers — you are designing complete IT ecosystems worth millions of pesos. The certifications in Module 6 (CCNA, Fortinet FCA, AZ-900, MS-900, ITIL 4) are the formal credentials that unlock each rung of this ladder. Study the material even if you do not sit for the exams immediately; the learning paths alone make you a much stronger consultant.</p>
 </div>
 <div class="callout deliverables-callout"><strong>How to Use the Three Deliverables:</strong> This course ships as three complementary deliverables. <strong>This PDF</strong> is your reference textbook. <strong>The Excel Progress Tracker</strong> is your dashboard. <strong>This Interactive HTML</strong> is your study companion - it saves your progress locally in your browser, so you can return anytime and pick up where you left off.</div>
+</div>
+<div class="module" id="module-0" data-module-num="0">
+<div class="module-header">
+<div class="module-kicker">MODULE 0 &middot; PRE-WORK (WEEKS 1-3)</div>
+<h2 class="module-title">Cisco Networking Basics — NetAcad Foundational Course</h2>
+<div class="callout goal-callout"><strong>Module Goal:</strong> Complete the boss-assigned Cisco Networking Academy 'Networking Basics' course (22 hours, 13 labs, free, self-paced) BEFORE starting Module 1. This course is your vendor-neutral foundation. It covers network types, network media, application layer services, protocols and standards, IPv4 addressing, and wireless access. By the end you will receive a Cisco-issued certificate of completion and be ready to absorb Modules 1-6 much faster.</div>
+</div>
+<div class="callout netacad-callout">
+<strong>Boss-Assigned Course URL &mdash; Enroll Here:</strong><br/>
+<a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener" class="netacad-link">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a>
+<p class="netacad-meta">FREE &middot; 22 hours &middot; 13 labs &middot; Self-paced &middot; Beginner &middot; Cisco certificate on completion &middot; Part of Career Path: Network Technician</p>
+<p class="netacad-note">This is the official Cisco Networking Academy "Networking Basics" course your boss assigned as your starting course. Enroll with your work or personal email. Block 1-2 hours per day for the first 2-3 weeks to complete it before starting Module 1.</p>
+</div>
+<div class="module-section">
+<h3 class="module-section-title">Weekly Schedule</h3>
+<table class="schedule-table">
+<thead><tr><th>Day</th><th>Activity</th></tr></thead>
+<tbody>
+<tr><td class="day-cell">Monday</td><td>Enroll on NetAcad + Module 0 Lesson 0.1 (Course Overview + Network Types)</td></tr>
+<tr><td class="day-cell">Tuesday</td><td>Module 0 Lesson 0.2 (Network Media) + Lab 1</td></tr>
+<tr><td class="day-cell">Wednesday</td><td>Module 0 Lesson 0.3 (Application Layer Services) + Lab 2</td></tr>
+<tr><td class="day-cell">Thursday</td><td>Module 0 Lesson 0.4 (Protocols &amp; Standards) + Labs 3-4</td></tr>
+<tr><td class="day-cell">Friday</td><td>Module 0 Lesson 0.5 (IPv4 Addressing) + Labs 5-7</td></tr>
+<tr><td class="day-cell">Saturday</td><td>Module 0 Lesson 0.6 (Wireless Access) + Labs 8-10</td></tr>
+<tr><td class="day-cell">Sunday</td><td>Complete remaining Labs 11-13 + Final Exam + download certificate</td></tr>
+</tbody></table>
+</div>
+<div class="module-progress">
+<div class="module-progress-label">Module 0 Progress: <span id="module-progress-pct-0">0%</span></div>
+<div class="progress-bar"><div class="progress-fill" id="module-progress-fill-0" style="width:0%"></div></div>
+</div>
+<section class="lesson" data-lesson-id="0.1">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.1</div>
+<h3 class="lesson-title">Course Enrollment &amp; Network Types — How Networks Are Classified</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.1">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">The Cisco Networking Basics course begins by establishing what a network is and the different ways networks are classified by scope and purpose. A network is a group of devices connected together to share resources and communicate. Networks are classified by geographic scope: Personal Area Network (PAN, a few meters, Bluetooth-class), Local Area Network (LAN, a building or campus), Metropolitan Area Network (MAN, a city), and Wide Area Network (WAN, multiple cities or countries). They are also classified by topology (bus, star, ring, mesh) and by transmission technology (wired vs wireless).</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">Enroll at https://www.netacad.com/courses/networking-basics using your work or personal email. The course is free, self-paced, and runs in any modern browser. The first module walks you through what a network is, why networks exist, and how they are sized. You will learn the difference between a home network (a few devices on one Wi-Fi router), a small office network (10-50 devices on a switch and AP), an enterprise network (hundreds to thousands of devices across multiple switches, APs, and routers), and the global internet itself (a network of networks). The course uses interactive visualizations to show data flowing between devices, which makes abstract concepts like 'packets' and 'protocols' tangible.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When you sit in the Apex office and connect your laptop to the Wi-Fi, you are joining the office LAN. When you browse to netacad.com, your traffic leaves the LAN, passes through the office router, crosses the WAN (your ISP's network), reaches Cisco's data center LAN, and the response reverses the path. Every step of this journey is governed by the concepts you will learn in Module 0. By the end of this lesson you will be able to look at any client's office and identify the LAN, the WAN edge, and the wireless segment in under 30 seconds.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">Module 0 is vendor-neutral (it is a Cisco Networking Academy course but teaches concepts that apply to every vendor). The partners this maps to are Cisco (Catalyst switches, Meraki wireless, ISR routers), Linksys (SMB networking), TP-Link and Ruijie (budget SMB), and the structured cabling partners Siemon and Canovate. After Module 0 you will understand what each of these partners actually sells, which makes Module 1 far easier to absorb.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>Have you created your free NetAcad account and enrolled in the Networking Basics course?</li>
+<li>Can you explain in one sentence the difference between a LAN and a WAN?</li>
+<li>Can you name the four network types by scope (PAN, LAN, MAN, WAN)?</li>
+<li>Can you look at the Apex office and identify the LAN, WAN edge, and wireless segment?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics (the course itself)</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>Cisco Networking Academy Home</strong><br/><a href="https://www.netacad.com/" target="_blank" rel="noopener">https://www.netacad.com/</a></li>
+<li><strong>Cisco Career Path: Network Technician</strong><br/><a href="https://www.netacad.com/career-paths/network-technician" target="_blank" rel="noopener">https://www.netacad.com/career-paths/network-technician</a></li>
+</ul>
+</div>
+</section>
+<section class="lesson" data-lesson-id="0.2">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.2</div>
+<h3 class="lesson-title">Network Media — How Data Physically Travels</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.2">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">Network media are the physical pathways that carry data between devices. The three main categories are: copper cabling (twisted-pair Cat5e/Cat6/Cat6a/Cat7, coaxial), fiber optic cabling (single-mode for long distance, multimode for short distance), and wireless (radio waves on Wi-Fi, cellular, Bluetooth). Each medium has trade-offs in speed, distance, cost, and immunity to interference. Choosing the right medium is one of the most important design decisions in any network.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">Copper cabling uses electrical signals over twisted pairs of copper wire; Cat6a supports 10 Gbps up to 100 meters. Fiber optic uses pulses of light through glass strands; single-mode fiber (9-micron core, laser) reaches 100+ km, multimode fiber (50/62.5-micron core, LED) reaches 300-500 m at 10 Gbps. Wireless uses radio waves; Wi-Fi 6E adds the 6 GHz band for more spectrum, 5G cellular uses millimeter-wave for high speed over short distances. The NetAcad course includes interactive labs where you virtually terminate cables, measure signal loss, and choose the right medium for a given scenario. You will complete Lab 1 in this lesson, which walks you through selecting media for a sample small office.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When Apex scopes a new office fit-out, the cabling choice is driven by distance and bandwidth: Cat6a copper to every desk (100 m at 10 Gbps), single-mode fiber between floors (for future 40/100 Gbps upgrade), and Wi-Fi 6 APs for mobile users. Without Module 0 you would not know why single-mode fiber is chosen over multimode for inter-floor runs — the NetAcad labs make this concrete. After this lesson, you will be able to read a floor plan and identify where copper, fiber, and wireless should be used.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">Siemon is the premium cabling partner (Cat6a, fiber, 25-year warranty); Canovate covers regional SMB. After Module 0 Lesson 0.2 you understand WHY a client would pay Siemon premium over Canovate budget — because the media fundamentals are the same and the difference is warranty, lead time, and installer ecosystem.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>Can you explain in one sentence when to use copper vs fiber vs wireless?</li>
+<li>What is the distance limit of Cat6a at 10 Gbps? (Answer: 100 meters)</li>
+<li>What is the difference between single-mode and multimode fiber?</li>
+<li>If a client wants to connect two buildings 500 meters apart, what medium do you recommend?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>Siemon Cabling Systems</strong><br/><a href="https://www.siemon.com/us/" target="_blank" rel="noopener">https://www.siemon.com/us/</a></li>
+<li><strong>IEEE 802.3 Ethernet Standards (copper and fiber)</strong><br/><a href="https://standards.ieee.org/ieee/802.3/" target="_blank" rel="noopener">https://standards.ieee.org/ieee/802.3/</a></li>
+</ul>
+</div>
+</section>
+<section class="lesson" data-lesson-id="0.3">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.3</div>
+<h3 class="lesson-title">Application Layer Services — How Users Experience the Network</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.3">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">The Application Layer (Layer 7 of the OSI model) is where users actually interact with the network. When you open a web browser, send an email, or stream a video, you are using application layer services. Common examples include HTTP/HTTPS (web), SMTP/IMAP/POP3 (email), DNS (name resolution), DHCP (automatic IP assignment), FTP/SFTP (file transfer), and SSH (remote terminal). These services run on top of the lower network layers but are what end users perceive as 'the network.'</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">Each application layer service uses a specific protocol with its own rules. HTTP and HTTPS use TCP port 80 and 443 respectively; SMTP uses TCP 25/587; DNS uses UDP 53; DHCP uses UDP 67/68. The NetAcad course walks you through each major service, what it does, and how to identify it. The labs let you simulate a DNS query, watch a DHCP lease being issued, and inspect an HTTP request/response cycle. By the end you understand that 'the internet is slow' could be a DNS problem, a bandwidth problem, or an application problem — and you know how to tell the difference.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When an Apex client says 'our email is slow,' the problem could be at any layer. Module 0 Lesson 0.3 trains you to ask: is SMTP (the protocol) reachable? Is DNS resolving the mail server name? Is HTTPS (for webmail) responsive? Is the WAN bandwidth saturated? After this lesson you can run a basic application-layer triage in 5 minutes — a skill most junior engineers lack.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">Microsoft (Exchange Online, Microsoft 365) is the dominant application-layer partner for email and collaboration. After Module 0 you understand the SMTP/IMAP/HTTPS protocols that Exchange Online uses, which makes M365 proposals easier to scope. Cisco Webex and Microsoft Teams are the dominant collaboration app-layer services.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>Can you name 5 application layer protocols and what port each uses?</li>
+<li>What protocol does DHCP use to assign IP addresses automatically?</li>
+<li>If a user complains 'the internet is slow,' what 3 application-layer checks would you run first?</li>
+<li>What is DNS and why is it called the 'phonebook of the internet'?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>IANA Service Name and Transport Protocol Port Number Registry</strong><br/><a href="https://www.iana.org/assignments/service-names-port-numbers/" target="_blank" rel="noopener">https://www.iana.org/assignments/service-names-port-numbers/</a></li>
+<li><strong>RFC 7230 — HTTP/1.1 Protocol</strong><br/><a href="https://www.rfc-editor.org/rfc/rfc7230" target="_blank" rel="noopener">https://www.rfc-editor.org/rfc/rfc7230</a></li>
+</ul>
+</div>
+</section>
+<section class="lesson" data-lesson-id="0.4">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.4</div>
+<h3 class="lesson-title">Protocols &amp; Standards — The Rules Networks Live By</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.4">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">A protocol is a set of rules that two devices agree to follow when communicating. A standard is a documented protocol specification that any vendor can implement, so that equipment from different vendors interoperates. The most important standards body for networking is the IEEE (Ethernet, Wi-Fi), followed by IETF (TCP/IP suite via RFCs), ITU-T (telecom), and ISO (OSI model). Without standards, you could not plug a Cisco switch into a Dell server and expect them to talk.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">The NetAcad course introduces the OSI 7-layer model (Physical, Data Link, Network, Transport, Session, Presentation, Application) and the TCP/IP 4-layer model (Link, Internet, Transport, Application). You learn that TCP is reliable (acks, retransmissions) while UDP is fast (no acks); that IP routes packets between networks; that Ethernet switches at Layer 2 using MAC addresses while routers route at Layer 3 using IP addresses. The course covers the most important standards: IEEE 802.3 (Ethernet), IEEE 802.11 (Wi-Fi), RFC 791 (IPv4), RFC 793 (TCP), RFC 768 (UDP). The labs let you capture packets with a virtual packet sniffer and identify each protocol header.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When Apex's engineer tells a client 'we recommend Cisco Catalyst switches because they implement IEEE 802.1Q VLAN tagging,' the client may not know what that means. After Module 0 Lesson 0.4 you can explain that 802.1Q is the IEEE standard for VLAN tagging on Ethernet frames, that it lets one switch carry traffic for multiple virtual LANs on the same cable, and that every enterprise switch from every vendor supports it because it is a standard. This is the kind of detail that builds credibility.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">Protocols and standards are vendor-neutral but reinforce why Apex can mix Cisco switches, Fortinet firewalls, and Dell servers in one solution — they all implement the same IEEE and IETF standards. After Module 0 you understand that vendor lock-in is a perception, not a technical reality, at the protocol level.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>Can you name the 7 layers of the OSI model in order?</li>
+<li>What is the difference between TCP and UDP, and when would you choose each?</li>
+<li>What is IEEE 802.1Q and why does it matter for VLANs?</li>
+<li>What is the difference between a switch (Layer 2) and a router (Layer 3)?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>IEEE 802 Standards</strong><br/><a href="https://standards.ieee.org/projects/802/" target="_blank" rel="noopener">https://standards.ieee.org/projects/802/</a></li>
+<li><strong>IETF RFC Editor (TCP/IP protocols)</strong><br/><a href="https://www.rfc-editor.org/" target="_blank" rel="noopener">https://www.rfc-editor.org/</a></li>
+<li><strong>ISO/IEC 7498-1 — OSI Reference Model</strong><br/><a href="https://www.iso.org/standard/20269.html" target="_blank" rel="noopener">https://www.iso.org/standard/20269.html</a></li>
+</ul>
+</div>
+</section>
+<section class="lesson" data-lesson-id="0.5">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.5</div>
+<h3 class="lesson-title">IPv4 Addressing — How Devices Find Each Other</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.5">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">An IPv4 address is a 32-bit number, usually written as four decimal octets (e.g., 192.168.1.10), that uniquely identifies a device on a network. IPv4 addresses are divided into network portion and host portion using a subnet mask (e.g., 255.255.255.0). Subnetting is the technique of dividing a large network into smaller logical networks for efficiency, security, and broadcast control. Understanding IPv4 addressing is the single most important skill in all of networking — every other concept builds on it.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">The NetAcad course teaches IPv4 addressing progressively: first what an IP address is, then the five classes (A, B, C, D, E), then private IP ranges (10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16) vs public IPs, then subnet masks and CIDR notation (/24, /16, /8), then subnetting math (how many hosts per subnet, how many subnets per mask). The labs give you hundreds of practice problems: 'What is the network address of 192.168.5.123/24? How many usable hosts in a /26? What is the broadcast address?' By the end you can subnet in your head — a skill that pays dividends for the rest of your career. You will also learn about DHCP (dynamic IP assignment), NAT (translating private IPs to public), and ARP (mapping IPs to MAC addresses).</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When Apex scopes a 100-user office, the engineer must design an IP plan: 192.168.10.0/24 for corporate LAN (254 usable), 192.168.20.0/24 for guest Wi-Fi (254 usable, isolated), 192.168.30.0/24 for CCTV cameras (254 usable), 192.168.40.0/24 for VoIP phones (254 usable). Without Module 0 Lesson 0.5 this is impossible to design correctly. After this lesson you can produce an IP plan for any size office in 15 minutes — and explain why each subnet exists.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">IPv4 addressing is vendor-neutral. Every Apex partner device — Cisco switch, Fortinet firewall, Dell server, Dahua camera — must be assigned an IP. After Module 0 you understand the IP planning that makes every Apex proposal technically sound. This is the foundation that makes Module 1 (Switches, Routers) and Module 3 (Firewall policies) actually implementable.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>How many usable host addresses are in a /24 subnet? (Answer: 254)</li>
+<li>What is the difference between a public IP and a private IP?</li>
+<li>What are the three private IP address ranges defined in RFC 1918?</li>
+<li>If a client needs 60 subnets with 60 hosts each, what subnet mask do you use?</li>
+<li>What does DHCP do, and why is it preferable to static IP assignment for most devices?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>RFC 1918 — Private IP Address Allocation</strong><br/><a href="https://www.rfc-editor.org/rfc/rfc1918" target="_blank" rel="noopener">https://www.rfc-editor.org/rfc/rfc1918</a></li>
+<li><strong>RFC 791 — IPv4 Protocol Specification</strong><br/><a href="https://www.rfc-editor.org/rfc/rfc791" target="_blank" rel="noopener">https://www.rfc-editor.org/rfc/rfc791</a></li>
+</ul>
+</div>
+</section>
+<section class="lesson" data-lesson-id="0.6">
+<div class="lesson-header">
+<div class="lesson-kicker">LESSON 0.6</div>
+<h3 class="lesson-title">Wireless Access — How Wi-Fi Works</h3>
+<div class="status-selector">
+<label>Progress:</label>
+<select class="status-dropdown" data-lesson-id="0.6">
+<option value="Not Started" selected>Not Started</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+<option value="Mastered">Mastered</option>
+</select>
+</div>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Definition</h4>
+<p class="section-body">Wireless access replaces physical cabling with radio waves, letting devices connect to the network without plugging in. The dominant wireless standard is IEEE 802.11 (Wi-Fi), with generations Wi-Fi 4 (802.11n, 2009), Wi-Fi 5 (802.11ac, 2013), Wi-Fi 6 (802.11ax, 2019), Wi-Fi 6E (adds 6 GHz band, 2020), and Wi-Fi 7 (802.11be, 2024). Other wireless technologies include Bluetooth (short-range PAN), cellular (4G LTE, 5G), and LoRaWAN (long-range IoT).</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">How It Works</h4>
+<p class="section-body">The NetAcad course explains the basics of wireless: how radio waves propagate, why 2.4 GHz has longer range but more interference than 5 GHz, why 6 GHz (Wi-Fi 6E/7) is a game-changer for spectrum availability, what an SSID is, how WPA2/WPA3 encryption works, and how roaming between access points works. The labs let you virtually configure a wireless AP, set up an SSID, and observe a client connecting. You learn the difference between standalone APs (managed individually) and controller-based APs (managed centrally from a Wireless LAN Controller or cloud service).</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Real Example</h4>
+<p class="section-body">When an Apex client asks 'why is our Wi-Fi slow in the conference room,' the answer requires understanding wireless fundamentals. Module 0 Lesson 0.6 trains you to check: how many APs cover the room? What band are clients on (2.4 GHz is slow and crowded)? How many clients are competing for the same channel? Is the AP a Wi-Fi 5 unit that should be upgraded to Wi-Fi 6? After this lesson you can run a basic wireless site survey in 20 minutes.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Apex Partner</h4>
+<p class="section-body">Cisco (Catalyst 9100 APs, Meraki MR series) and Fortinet (FortiAP) are Apex's primary wireless partners. After Module 0 you understand WHY the client needs Wi-Fi 6 vs Wi-Fi 5, WHY 6 GHz matters, and WHY a controller-based deployment beats standalone APs for any office larger than 3 rooms — making Module 1 Lesson 1.4 (Wireless Access Points) much easier to absorb.</p>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Discovery Questions</h4>
+<ul class="discovery-list">
+<li>What are the three frequency bands used by Wi-Fi, and which Wi-Fi generations use each?</li>
+<li>What is the difference between 2.4 GHz and 5 GHz in terms of range and speed?</li>
+<li>What is WPA3 and why is it more secure than WPA2?</li>
+<li>What is roaming and why does it matter for voice-over-Wi-Fi?</li>
+<li>How many APs would you deploy for a 30-user open-plan office, and where would you place them?</li>
+</ul>
+</div>
+<div class="lesson-section">
+<h4 class="section-heading">Official Sources</h4>
+<ul class="sources-list">
+<li><strong>Cisco Networking Academy — Networking Basics</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></li>
+<li><strong>Wi-Fi Alliance — Wi-Fi 6E and 7</strong><br/><a href="https://www.wi-fi.org/discover-wi-fi" target="_blank" rel="noopener">https://www.wi-fi.org/discover-wi-fi</a></li>
+<li><strong>IEEE 802.11 Wireless LAN Standards</strong><br/><a href="https://standards.ieee.org/ieee/802.11/" target="_blank" rel="noopener">https://standards.ieee.org/ieee/802.11/</a></li>
+</ul>
+</div>
+</section>
+<div class="module-section scenario-section">
+<h3 class="module-section-title">Client Scenario</h3>
+<h4 class="scenario-title">Client Scenario — Use Module 0 Knowledge to Triage a 'Network Is Slow' Ticket</h4>
+<p class="section-body">An Apex client calls the helpdesk: 'Our network is slow today, please fix it.' Without Module 0 a junior engineer would dispatch a tech onsite to 'check the router' — expensive and often wrong. With Module 0 knowledge the engineer can triage remotely in 10 minutes by walking through the OSI layers.</p>
+<div class="callout approach-callout"><strong>Apex Engineer's Approach:</strong> The engineer runs Layer 7 checks first: can the user browse to google.com? Can they reach the mail server by name (DNS) and by IP (rules out DNS)? Can they ping the default gateway (Layer 3)? Can they ping 8.8.8.8 (rules out internal routing)? If 8.8.8.8 responds but google.com does not, it is a DNS issue — fix the DNS server. If pings work but browsing is slow, it is a bandwidth issue — check the firewall for saturated links. If only one user is affected, it is likely a wireless issue — check the user's AP association and signal strength. This structured OSI-based triage is exactly what Module 0 teaches through its labs, and it is the single most valuable skill a junior network engineer can develop. Apex's senior engineers use this same method daily.</div>
+</div>
+<div class="module-section quiz-section">
+<h3 class="module-section-title">Self-Assessment Quiz</h3>
+<div class="quiz" data-module="0">
+<p class="quiz-intro">Answer each question in your head first, then click to reveal the answer. If you can answer 7 of 10 correctly without notes, you are ready to mark this module as Mastered.</p>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q1">
+<span class="quiz-num">Q1.</span> What does the Cisco Networking Basics course cost and how long is it?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> It is FREE and takes approximately 22 hours of self-paced study, including 13 hands-on labs.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q2">
+<span class="quiz-num">Q2.</span> Name the four network types classified by geographic scope.
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> PAN (Personal Area Network), LAN (Local Area Network), MAN (Metropolitan Area Network), WAN (Wide Area Network).</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q3">
+<span class="quiz-num">Q3.</span> What is the distance limit of Cat6a copper cabling at 10 Gbps?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> 100 meters — the full standard Ethernet distance. Cat6 (non-a) is limited to 55 meters at 10 Gbps.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q4">
+<span class="quiz-num">Q4.</span> What is the difference between single-mode and multimode fiber?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> Single-mode uses a 9-micron core with laser light and reaches 100+ km; multimode uses a 50/62.5-micron core with LED light and is limited to ~300-500 meters at 10 Gbps.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q5">
+<span class="quiz-num">Q5.</span> What port does HTTPS use, and what protocol underlies it?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> HTTPS uses TCP port 443; it is HTTP layered over TLS/SSL encryption.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q6">
+<span class="quiz-num">Q6.</span> Name the 7 layers of the OSI model in order from 1 to 7.
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> Physical, Data Link, Network, Transport, Session, Presentation, Application.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q7">
+<span class="quiz-num">Q7.</span> What is the difference between TCP and UDP?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> TCP is connection-oriented, reliable (acks, retransmissions); UDP is connectionless, fast (no acks, no retransmissions). TCP for web/email/file transfer; UDP for DNS, VoIP, video streaming.</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q8">
+<span class="quiz-num">Q8.</span> How many usable host addresses are in a /24 subnet?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> 254 usable hosts (256 total minus network address and broadcast address).</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q9">
+<span class="quiz-num">Q9.</span> What are the three private IPv4 address ranges defined in RFC 1918?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> 10.0.0.0/8 (16 million addresses), 172.16.0.0/12 (1 million addresses), 192.168.0.0/16 (65,536 addresses).</div>
+</div>
+<div class="quiz-item">
+<div class="quiz-question" data-q-id="m0-q10">
+<span class="quiz-num">Q10.</span> What frequency bands does Wi-Fi use, and which generation added 6 GHz?
+<button class="reveal-btn" onclick="revealAnswer(this)">Show Answer</button>
+</div>
+<div class="quiz-answer" style="display:none;"><strong>Answer:</strong> Wi-Fi uses 2.4 GHz and 5 GHz traditionally; Wi-Fi 6E added the 6 GHz band. Wi-Fi 7 also uses 6 GHz plus adds 320 MHz channels and Multi-Link Operation.</div>
+</div>
+</div>
+</div>
 </div>
 <div class="module" id="module-1" data-module-num="1">
 <div class="module-header">
@@ -2934,13 +3376,46 @@ html, body {
 <div class="module" id="appendix-a">
 <div class="module-header">
 <div class="module-kicker">APPENDIX A</div>
-<h2 class="module-title">Full 26-Week Study Schedule</h2>
+<h2 class="module-title">Full 15-Week Study Schedule</h2>
 </div>
-<p class="section-body">This is the complete 26-week schedule mapped to the 6 modules. Each row is one week; each column is one day. Print this schedule and pin it above your desk - crossing off each day as you complete it gives a powerful sense of progress.</p>
+<p class="section-body">This is the complete 15-week schedule: 3 weeks of Module 0 (Cisco NetAcad Networking Basics, your boss-assigned starting course) followed by 12 weeks of Modules 1-6. Each row is one week; each column is one day. Print this schedule and pin it above your desk - crossing off each day as you complete it gives a powerful sense of progress.</p>
 <div class="table-wrap">
 <table class="full-schedule-table">
 <thead><tr><th>Week</th><th>Mod</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th></tr></thead>
 <tbody>
+<tr>
+<td class="week-cell">W0-1</td>
+<td class="mod-cell">M0</td>
+<td>Enroll on NetAcad + L0.1 Network Types</td>
+<td>L0.2 Network Media + Lab 1</td>
+<td>L0.3 App Layer Services + Lab 2</td>
+<td>L0.4 Protocols &amp; Standards + Labs 3-4</td>
+<td>L0.5 IPv4 Addressing + Labs 5-7</td>
+<td>Catch up on labs</td>
+<td>Review Week 0-1</td>
+</tr>
+<tr>
+<td class="week-cell">W0-2</td>
+<td class="mod-cell">M0</td>
+<td>L0.6 Wireless Access + Labs 8-10</td>
+<td>Complete Labs 11-12</td>
+<td>Lab 13 + Final Exam prep</td>
+<td>Module 0 Final Exam</td>
+<td>Download Cisco certificate</td>
+<td>Share certificate with boss</td>
+<td>Rest + celebrate Module 0 complete</td>
+</tr>
+<tr>
+<td class="week-cell">W0-3</td>
+<td class="mod-cell">M0</td>
+<td>Buffer week: revisit weak topics</td>
+<td>Module 0 quiz in this curriculum</td>
+<td>Prep for Module 1</td>
+<td>Begin Module 1 early if confident</td>
+<td>Continue Module 1</td>
+<td>Continue Module 1</td>
+<td>Continue Module 1</td>
+</tr>
 <tr>
 <td class="week-cell">W1</td>
 <td class="mod-cell">M1</td>
@@ -3086,6 +3561,66 @@ html, body {
 <table class="sources-table">
 <thead><tr><th>Category</th><th>Source Name</th><th>What to Study</th><th>Why Legit</th></tr></thead>
 <tbody>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>Cisco Networking Academy — Networking Basics (boss-assigned course)</strong><br/><a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US" target="_blank" rel="noopener">https://www.netacad.com/courses/networking-basics?courseLang=en-US</a></td>
+<td>Free 22-hour beginner course: network types, media, application layer, protocols, IPv4, wireless. 13 labs.</td>
+<td>Official Cisco Networking Academy — free, self-paced, 3.6M+ enrolled, part of Career Path: Network Technician</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>Cisco Networking Academy Home</strong><br/><a href="https://www.netacad.com/" target="_blank" rel="noopener">https://www.netacad.com/</a></td>
+<td>Browse all Cisco NetAcad courses and career paths</td>
+<td>Official Cisco learning platform for networking education</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>Cisco Career Path: Network Technician</strong><br/><a href="https://www.netacad.com/career-paths/network-technician" target="_blank" rel="noopener">https://www.netacad.com/career-paths/network-technician</a></td>
+<td>Full career path that Networking Basics is part of</td>
+<td>Official Cisco career path roadmap</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>IANA Port Number Registry</strong><br/><a href="https://www.iana.org/assignments/service-names-port-numbers/" target="_blank" rel="noopener">https://www.iana.org/assignments/service-names-port-numbers/</a></td>
+<td>Application layer protocol port assignments</td>
+<td>Internet Assigned Numbers Authority — official registry</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>RFC 1918 — Private IP Address Allocation</strong><br/><a href="https://www.rfc-editor.org/rfc/rfc1918" target="_blank" rel="noopener">https://www.rfc-editor.org/rfc/rfc1918</a></td>
+<td>Private IPv4 address ranges (10/172.16/192.168)</td>
+<td>Internet Engineering Task Force RFC — official standard</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>RFC 791 — IPv4 Protocol Specification</strong><br/><a href="https://www.rfc-editor.org/rfc/rfc791" target="_blank" rel="noopener">https://www.rfc-editor.org/rfc/rfc791</a></td>
+<td>Original IPv4 protocol specification</td>
+<td>Internet Engineering Task Force RFC — official standard</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>IEEE 802.3 Ethernet Standards</strong><br/><a href="https://standards.ieee.org/ieee/802.3/" target="_blank" rel="noopener">https://standards.ieee.org/ieee/802.3/</a></td>
+<td>Wired Ethernet physical and data link layer standards</td>
+<td>Institute of Electrical and Electronics Engineers — official standards body</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>IEEE 802.11 Wireless LAN Standards</strong><br/><a href="https://standards.ieee.org/ieee/802.11/" target="_blank" rel="noopener">https://standards.ieee.org/ieee/802.11/</a></td>
+<td>Wi-Fi physical and MAC layer standards (Wi-Fi 4/5/6/6E/7)</td>
+<td>Institute of Electrical and Electronics Engineers — official standards body</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>IETF RFC Editor</strong><br/><a href="https://www.rfc-editor.org/" target="_blank" rel="noopener">https://www.rfc-editor.org/</a></td>
+<td>All TCP/IP protocol specifications (TCP, UDP, IP, HTTP, DNS, DHCP)</td>
+<td>Internet Engineering Task Force — official RFC repository</td>
+</tr>
+<tr>
+<td class="cat-cell"><strong>Module 0</strong></td>
+<td><strong>ISO/IEC 7498-1 — OSI Reference Model</strong><br/><a href="https://www.iso.org/standard/20269.html" target="_blank" rel="noopener">https://www.iso.org/standard/20269.html</a></td>
+<td>The 7-layer OSI model reference</td>
+<td>International Organization for Standardization — official standard</td>
+</tr>
 <tr>
 <td class="cat-cell"><strong>Networking</strong></td>
 <td><strong>Cisco Catalyst Switches Documentation</strong><br/><a href="https://www.cisco.com/c/en/us/support/switches/index.html" target="_blank" rel="noopener">https://www.cisco.com/c/en/us/support/switches/index.html</a></td>
@@ -3406,7 +3941,7 @@ html, body {
 
 <script>
 // All lesson IDs in the course
-var LESSON_IDS = ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7"];
+var LESSON_IDS = ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7", "2.1", "2.2", "2.3", "2.4", "2.5", "2.6", "3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7", "4.1", "4.2", "4.3", "4.4", "4.5", "4.6", "5.1", "5.2", "5.3", "5.4", "5.5", "5.6", "6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7"];
 
 // ========== NAVIGATION ==========
 function showModule(targetId) {
@@ -3472,7 +4007,7 @@ function updateProgressDisplay() {
   document.getElementById('overall-pct').textContent = weighted + '%';
 
   // Per-module progress
-  var moduleLessonMap = {"1": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"], "2": ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"], "3": ["3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7"], "4": ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6"], "5": ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"], "6": ["6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7"]};
+  var moduleLessonMap = {"0": ["0.1", "0.2", "0.3", "0.4", "0.5", "0.6"], "1": ["1.1", "1.2", "1.3", "1.4", "1.5", "1.6", "1.7"], "2": ["2.1", "2.2", "2.3", "2.4", "2.5", "2.6"], "3": ["3.1", "3.2", "3.3", "3.4", "3.5", "3.6", "3.7"], "4": ["4.1", "4.2", "4.3", "4.4", "4.5", "4.6"], "5": ["5.1", "5.2", "5.3", "5.4", "5.5", "5.6"], "6": ["6.1", "6.2", "6.3", "6.4", "6.5", "6.6", "6.7"]};
   Object.keys(moduleLessonMap).forEach(function(modNum) {
     var lessonIds = moduleLessonMap[modNum];
     var mCompleted = 0, mMastered = 0, mInProgress = 0;
